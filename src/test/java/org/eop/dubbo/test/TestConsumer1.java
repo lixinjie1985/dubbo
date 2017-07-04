@@ -16,7 +16,7 @@ public class TestConsumer1 {
 		UserService userService = (UserService)context.getBean("userService");
 		System.out.println(userService.getUser("1010", "李新杰", "男", 32));
 		PostComponent postCmp = (PostComponent)context.getBean("postComponent");
-		postCmp.getCmp();
+		System.out.println(postCmp.getCmp("2020", "李新杰"));
 	}
 
 }
